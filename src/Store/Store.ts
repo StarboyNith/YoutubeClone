@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import todoReducer from "../Features/todo/todoSlice"
+import sidebarReducer from "../Features/todo/homeSlice"
 
  const store = configureStore({
-    reducer:{todoReducer}
+    reducer:{
+        sidebarReducer,        
+    }
 })
 
 export default store
