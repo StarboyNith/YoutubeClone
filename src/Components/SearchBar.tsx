@@ -10,12 +10,8 @@ import Feeds from "./Feeds";
 
 function SearchBar() {
   return (
-    <Stack width="125vw" direction={"column"}>
-      <Stack
-        direction="row"           
-        spacing={20}
-         border="solid"
-      >
+    <Stack direction={"column"}>
+      <Stack direction="row" spacing={55} paddingRight="10px">
         {/* Left section: Menu icon and Logo */}
         <Stack
           direction="row"
@@ -98,7 +94,7 @@ function SearchBar() {
           </Stack>
         </Stack>
       </Stack>
-      <Stack>
+      <Stack padding="20px">
         <Feeds />
       </Stack>
     </Stack>
