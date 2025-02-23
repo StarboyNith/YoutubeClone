@@ -1,15 +1,15 @@
 import Navbar from "./Navbar";
 import SearchBar from "./SearchBar";
 import Sidebar from "./Sidebar";
-import { Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 
 const Home = () => {
   return (
-    <Stack spacing={1} direction="row">
-      <Navbar />
+    <Box sx={{ display: "flex", flexDirection: "column" }}>
       <SearchBar />
-      <Sidebar />
-    </Stack>
+      {/* <Sidebar /> */}
+      <Navbar />
+    </Box>
   );
 };
 
